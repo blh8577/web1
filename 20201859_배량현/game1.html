@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>기말고사</title>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="script2.js"></script>
+        <link rel="stylesheet" href="css.css">
+    </head>
+    <body>
+        <!--여기가 제목-->
+        <header>
+            <div class="hihi">
+                <h1>
+                    <a class="mog" href="index.html">기린그린그림</a>
+                </h1>
+            </div>
+        </header>
+
+        <!--네비게이션-->
+        <div class="sibal">
+            <nav id="main-navigation">
+                <div class="pull-left">
+                    <ul class="outer-menu">
+                        <li class="outer-menu-item">
+                            <a href="evaluation.html">게시판</a>
+                            <ul>
+                                <li>
+                                    <a href="evaluation.html">평가 게시판</a>
+                                </li>
+                                <li>
+                                    <a href="trade.html">매매 게시판</a>
+                                </li>
+                                <li>
+                                    <a href="announcement.html">이용규정
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="outer-menu-item">
+                            <a href="login.html">로그인</a>
+                        </li>
+                        <li class="outer-menu-item">
+                            <a href="signup.html">회원가입</a>
+                        </li>
+                        <li class="outer-menu-item">
+                            <a href="game1.html">게임</a>
+                            <ul>
+                                <li>
+                                    <a href="game1.html">game1</a>
+                                </li>
+                                <li>
+                                    <a href="game2.html">game2</a>
+                                </li>
+                                <li>
+                                    <a href="game3.html">game3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <div class="search-bar">
+                        <form class="hwak" action="#" method="post">
+                            <input type="text" class="input-search" placeholder="검색허싈???">
+                            <input type="submit" class="input-search-submit" value="검색">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--메뉴-->
+        <aside class="hello">
+            
+            <div id="menu">
+                <h3 class="show1" onclick="hidenView(1)" style="cursor: pointer;">인기글</h3>
+                <ul>
+                    <li class="hiden1">
+                        <a href="#">인기글 1</a>
+                    </li>
+                    <li class="hiden1">
+                        <a href="#">인기글 2</a>
+                    </li>
+                    <li class="hiden1">
+                        <a href="#">인기글 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="aside-list">
+                <h3 class="show2" onclick="hidenView(2)" style="cursor: pointer;">최신글</h3>
+                <ul>
+                    <li class="hiden2">
+                        <a href="#">최신글 1</a>
+                    </li>
+                    <li class="hiden2">
+                        <a href="#">최신글 2</a>
+                    </li>
+                    <li class="hiden2">
+                        <a href="#">최신글 3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="run">
+                <img id="image" alt="img" src="./img/1.png">
+            </div>
+        </aside>
+        <!--글 작성-->
+
+        <section class="bobody">
+            <article>
+                <!--여기서부터-->
+                <canvas id="canvas" width="600" height="600"></canvas>
+                <script>
+                   game1();
+                </script>
+
+                <!--여기까지-->
+            </article>
+        </section>
+
+        <footer class="footerer">
+            컴퓨터공학과 20201859 배량현
+        </footer>
+    </body>
+</html>
