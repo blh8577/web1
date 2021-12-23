@@ -21,6 +21,12 @@ window.onload = function () {
         image.src = frames[count];
         count = count + 1;
     }, 50);
+}
+
+
+
+// //페이지가 준비되면 hiden클래스 들이 감춰지기 위하여 구현
+$(document).ready(function () {
     //로그인이 미구현이기 때문에 클릭하면 경고창 출력
     $('.submit-btn').click(function () {
         alert("로그인 미구현");
@@ -32,14 +38,7 @@ window.onload = function () {
 
     $('.hiden1').css('display', 'none');
     $('.hiden2').css('display', 'none');
-}
-
-
-
-// //페이지가 준비되면 hiden클래스 들이 감춰지기 위하여 구현
-// $(document).ready(function () {
-    
-// });
+});
 //클릭을 하면 hiden클래스들의 display가 none이라면 block으로
 //block이면 none으로 변경
 function hidenView(hiden) {
